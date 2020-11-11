@@ -5,7 +5,6 @@ import {Response} from "../helper/response.ts";
 import {enscriptPass, verifyPass} from "../security/pass.ts";
 import {genToken, getPayload} from "../security/jwt.ts";
 import {parseToken} from "../helper/token.ts";
-import {User} from "../model/user.ts";
 
 export const signInHandler = async (context: Context) => {
     const body = await context.request.body()
