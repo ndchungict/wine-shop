@@ -14,3 +14,9 @@ export const selectWineById = async (wineId: string) => {
         }
     })
 }
+
+export const selectWineByCate = async (cateID: string) => {
+    return wineCollection.find({
+        cateId: cateID
+    });
+}
